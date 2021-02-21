@@ -44,27 +44,3 @@ CREATE TABLE salaries(
 	PRIMARY KEY(emp_no),
 	FOREIGN KEY(emp_no) REFERENCES employees(emp_no)
 );
-
-COPY titles
-FROM '/Users/chelseaball/Public/titles.csv'
-DELIMITER ',' CSV HEADER;
-
-COPY employees
-FROM '/Users/chelseaball/Public/employees.csv'
-DELIMITER ',' CSV HEADER;
-
-COPY departments
-FROM '/Users/chelseaball/Public/departments.csv'
-DELIMITER ',' CSV HEADER;
-
-COPY dep_emp
-FROM '/Users/chelseaball/Public/dept_emp.csv'
-DELIMITER ',' CSV HEADER;
-
-COPY dep_manager
-FROM '/Users/chelseaball/Public/dept_manager.csv'
-DELIMITER ',' CSV HEADER;
-
-COPY salaries
-FROM '/Users/chelseaball/Public/salaries.csv'
-DELIMITER ',' CSV HEADER;
